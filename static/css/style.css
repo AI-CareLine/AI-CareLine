@@ -1,0 +1,127 @@
+/* Umumiy stillar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tugmalar */
+button, input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Bosh sahifa */
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.home-container button {
+    margin: 10px;
+}
+
+/* Shifoxonalar ro‘yxati */
+.hospital-list, .doctor-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-list form, .doctor-list form {
+    margin-bottom: 20px;
+}
+
+.hospital-list select, .doctor-list select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.hospital-list ul, .doctor-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hospital-list li, .doctor-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Shifoxona detallari */
+.hospital-detail {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-detail img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Navbat olish formasi */
+.appointment-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.appointment-form select, .appointment-form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Muvaffaqiyat sahifasi */
+.success-page {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

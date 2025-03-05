@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbat muvaffaqiyatli</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="success-page">
+        <h1>Siz qabulga muvaffaqiyatli yozildingiz!</h1>
+        <p><strong>Shifoxona:</strong> {{ appointment.hospital.name }}</p>
+        <p><strong>Shifokor:</strong> {{ appointment.doctor.first_name }} {{ appointment.doctor.last_name }}</p>
+        <p><strong>Bemor ismi:</strong> {{ appointment.patient_name }}</p>
+        <p><strong>Navbat vaqti:</strong> {{ appointment.start_time }} - {{ appointment.end_time }}</p>
+        <p>Ushbu ekranni screenshot qilib, belgilangan vaqtga keling.</p>
+        <a href="{% url 'home' %}">Bosh sahifaga qaytish</a>
+    </div>
+</body>
+</html>

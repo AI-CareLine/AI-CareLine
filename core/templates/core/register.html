@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Ro‘yxatdan o‘tish</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="appointment-form">
+        <h1>Ro‘yxatdan o‘tish</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Ro‘yxatdan o‘tish">
+        </form>
+        <p>Allaqachon hisobingiz bormi? <a href="{% url 'login' %}">Kirish</a></p>
+    </div>
+</body>
+</html>
